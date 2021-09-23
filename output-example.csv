@@ -1,0 +1,6 @@
+,name_input,synonym,accepted_name,category,criteria,taxon_id,assessment_date
+0,Felis margarita,FALSE,Felis margarita,LC,,8541,2014-04-20
+1,Fomitiporia nubicola,FALSE,Fomitiporia nubicola,VU,C2a(ii),187001148,2020-05-27
+2,Pinna nobilis,FALSE,Pinna nobilis,CR,A2be+4be,160075998,2019-10-18
+3,Ixalidium transiens,FALSE,Ixalidium transiens,VU,B1ab(iii),19672693,2014-01-23
+4,Iberus gualtieranus,FALSE,Iberus gualtieranus,EN,"B1ab(iii,v)+2ab(iii,v)",184948,2010-09-01
