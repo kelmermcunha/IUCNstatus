@@ -71,7 +71,7 @@ optional arguments:
                         the IUCN region identifier
 ```
 
-To perform a global assessment search use ```bash -r global ```. To search within a specific region, use the [region identifiers](https://apiv3.iucnredlist.org/api/v3/region/list?token=9bb4facb6d23f48efbf424bb05c0c1ef1cf6f468393bc745d42179ac4aca5fee) defined by IUCN.
+To perform a global assessment search use ```-r global ```. To search within a specific region, use the [region identifiers](https://apiv3.iucnredlist.org/api/v3/region/list?token=9bb4facb6d23f48efbf424bb05c0c1ef1cf6f468393bc745d42179ac4aca5fee) defined by IUCN.
 
 Thank you!
 
