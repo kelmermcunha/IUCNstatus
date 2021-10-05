@@ -29,10 +29,10 @@ You'll need [Git](https://git-scm.com) installed to sucessfully clone and run th
 ```bash
   # First, clone this repository
   $ git clone https://github.com/kelmermcunha/IUCNstatus
-  
+
   # Change your directory to this repository
   $ cd IUCNstatus
-  
+
   # Run the script
   $ python3 IUCNstatus.py --help
 ```
@@ -44,7 +44,7 @@ Alternatively, you can download the script directly in the "Code" buttom. Then, 
 ```bash
   # Change to the directory where you downloaded the script
   $ cd path/to/the/folder
-  
+
   # Run the script
   $ python3 IUCNstatus.py --help
 ```
@@ -53,7 +53,7 @@ Alternatively, you can download the script directly in the "Code" buttom. Then, 
 
 You'll first need to [generate](https://apiv3.iucnredlist.org/api/v3/token) a personal API token to connect with IUCN Red List API.
 
-Then, create a .csv file following the [example](https://github.com/kelmermcunha/IUCNstatus/blob/main/input-example.csv). 
+Then, create a .csv file following the [example](https://github.com/kelmermcunha/IUCNstatus/blob/main/input-example.csv).
 Note that the API token is in the first line, followed by the species names in the same column.
 
 ```bash
@@ -67,11 +67,13 @@ optional arguments:
   -d DIRECTORY, --directory DIRECTORY
                         Path to the .csv file
   -r REGION, --region REGION
-                        Search species assessments for a specific region using
+                        Search species assessments within a specific region using
                         the IUCN region identifier
 ```
 
-To perform a search within a specific region, use the [region identifiers](https://apiv3.iucnredlist.org/api/v3/region/list?token=9bb4facb6d23f48efbf424bb05c0c1ef1cf6f468393bc745d42179ac4aca5fee) defined by IUCN.
+To perform a global assessment search use ```bash -r global ```. To search within a specific region, use the [region identifiers](https://apiv3.iucnredlist.org/api/v3/region/list?token=9bb4facb6d23f48efbf424bb05c0c1ef1cf6f468393bc745d42179ac4aca5fee) defined by IUCN.
+
+Thank you!
 
 ## Author
 
