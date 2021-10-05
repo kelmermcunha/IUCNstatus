@@ -4,14 +4,14 @@ from time import sleep
 import argparse
 
 parser = argparse.ArgumentParser(description = 'Species assessment automated search through IUCN Red List API')
-parser.add_argument('-d', '--directory', type = str, help = 'Path to the .csv file')
+parser.add_argument('-i', '--input', type = str, help = 'Path to the .csv file')
 parser.add_argument('-r', '--region', type = str, help = 'Search species assessments within a specific region using the IUCN region identifier')
 args = parser.parse_args()
 
 dict = {'name_input':[], 'synonym':[], 'accepted_name':[],
 'category':[], 'criteria':[], 'taxon_id':[], 'assessment_date':[]}
 
-splist = pd.read_csv(args.directory, header = None)
+splist = pd.read_csv(args.input, header = None)
 def getStatus(spname):
     url = 'https://apiv3.iucnredlist.org/api/v3/species/' + spname + '/region/' + args.region + '?token=' + splist[0][0]
     r = requests.get(url)

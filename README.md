@@ -58,17 +58,18 @@ Note that the API token is in the first line, followed by the species names in t
 
 ```bash
   $ python3 IUCNstatus.py --help
-usage: IUCNstatus.py [-h] [-d DIRECTORY] [-r REGION]
+usage: IUCNstatus.py [-h] [-i INPUT] [-r REGION]
 
 Species assessment automated search through IUCN Red List API
 
 optional arguments:
   -h, --help            show this help message and exit
-  -d DIRECTORY, --directory DIRECTORY
+  -i INPUT, --input INPUT
                         Path to the .csv file
   -r REGION, --region REGION
-                        Search species assessments within a specific region using
+                        Search species assessments within a specific region using 
                         the IUCN region identifier
+
 ```
 
 To perform a global assessment search use ```-r global ```. To search within a specific region, use the [region identifiers](https://apiv3.iucnredlist.org/api/v3/region/list?token=9bb4facb6d23f48efbf424bb05c0c1ef1cf6f468393bc745d42179ac4aca5fee) defined by IUCN.
